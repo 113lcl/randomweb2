@@ -422,12 +422,15 @@ section{ position:relative; padding: 140px 5vw; }
               radial-gradient(500px circle at 85% 70%, rgba(120,150,255,.12), transparent 55%);
   pointer-events:none;
 }
-.features-grid{ position:relative; display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
+.features-grid{ position:relative; display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
 .feature-card{
   background:var(--bg-elev); padding:38px 32px; transition: background .4s var(--ease), transform .4s var(--ease);
   will-change: transform;
+  border-right:1px solid var(--line); border-bottom:1px solid var(--line);
 }
 .feature-card:hover{ background: rgba(255,255,255,.03); }
+.feature-card:nth-child(3n){ border-right:none; }
+.feature-card:nth-last-child(-n+3){ border-bottom:none; }
 .feature-icon{
   width:56px; height:56px; border-radius:50%; border:1px solid var(--line);
   display:flex; align-items:center; justify-content:center; color:var(--accent); margin-bottom:22px;
@@ -435,8 +438,18 @@ section{ position:relative; padding: 140px 5vw; }
 .feature-card h3{ font-size:1.05rem; font-weight:500; margin-bottom:10px; }
 .feature-card p{ font-size:.88rem; color:var(--ink-dim); line-height:1.6; }
 
-@media (max-width: 900px){ .features-grid{ grid-template-columns:1fr 1fr; } }
-@media (max-width: 600px){ .features-grid{ grid-template-columns:1fr; } }
+@media (max-width: 900px){
+  .features-grid{ grid-template-columns:1fr 1fr; }
+  .feature-card:nth-child(3n){ border-right:1px solid var(--line); }
+  .feature-card:nth-child(2n){ border-right:none; }
+  .feature-card:nth-last-child(-n+3){ border-bottom:1px solid var(--line); }
+  .feature-card:nth-last-child(-n+2){ border-bottom:none; }
+}
+@media (max-width: 600px){
+  .features-grid{ grid-template-columns:1fr; }
+  .feature-card{ border-right:none; border-bottom:1px solid var(--line); }
+  .feature-card:last-child{ border-bottom:none; }
+}
 
 /* ---------- Testimonial ---------- */
 .testimonial{ display:flex; justify-content:center; text-align:center; }
