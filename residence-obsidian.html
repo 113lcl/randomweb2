@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Villa Obsidian — OBSIDIAN</title>
+<meta name="description" content="Villa Obsidian: a 620 m² residence cut into the Swiss Alps, built from concrete, glass and black steel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="preloader-logo">OBSIDIAN</div>
+  <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="noise-overlay"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>OBSIDIAN</a>
+    <nav class="nav-links">
+      <a href="about.html"><span>01</span> Philosophy</a>
+      <a href="residences.html" aria-current="page"><span>02</span> Residences</a>
+      <a href="services.html"><span>03</span> Services</a>
+      <a href="journal.html"><span>04</span> Journal</a>
+      <a href="contact.html"><span>05</span> Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-tilt-ignore>
+      <svg class="icon-sun" width="17" height="17" viewBox="0 0 17 17" fill="none"><circle cx="8.5" cy="8.5" r="3.5" stroke="currentColor" stroke-width="1.2"/><path d="M8.5 1V2.5M8.5 14.5V16M16 8.5H14.5M2.5 8.5H1M13.6 3.4L12.5 4.5M4.5 12.5L3.4 13.6M13.6 13.6L12.5 12.5M4.5 4.5L3.4 3.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      <svg class="icon-moon" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M14.5 10.4A6.5 6.5 0 1 1 6.6 2.5a5.2 5.2 0 0 0 7.9 7.9Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+    </button>
+    <a href="contact.html" class="nav-cta magnetic"><span>Enquire</span></a>
+    <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="about.html">Philosophy</a>
+  <a href="residences.html">Residences</a>
+  <a href="services.html">Services</a>
+  <a href="journal.html">Journal</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="project-hero">
+  <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=2400&auto=format&fit=crop" alt="Villa Obsidian exterior">
+  <div class="project-hero-content">
+    <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><a href="residences.html">Residences</a><span>/</span><span>Villa Obsidian</span></div>
+    <h1>Villa Obsidian</h1>
+    <p>A residence cut into the mountainside, built to disappear into the rock it stands on.</p>
+  </div>
+</section>
+
+<div class="specs-bar">
+  <div class="spec"><div class="spec-label">Location</div><div class="spec-value">Swiss Alps</div></div>
+  <div class="spec"><div class="spec-label">Completed</div><div class="spec-value">2024</div></div>
+  <div class="spec"><div class="spec-label">Area</div><div class="spec-value">620 m²</div></div>
+  <div class="spec"><div class="spec-label">Materials</div><div class="spec-value">Concrete, glass, steel</div></div>
+  <div class="spec"><div class="spec-label">Duration</div><div class="spec-value">32 months</div></div>
+</div>
+
+<section class="project-story">
+  <div class="reveal-up">
+    <div class="section-num">The brief</div>
+    <h2 style="font-family:var(--serif);font-weight:400;font-size:2rem;margin-top:14px;line-height:1.2;">Live inside the mountain, not on top of it</h2>
+  </div>
+  <div class="reveal-up">
+    <p class="lead" style="margin-bottom:24px;">The clients — a family who had skied this valley for three generations — asked for a house that wouldn't compete with the view. What we built instead reads as a single dark fissure in the slope, its roofline following the natural fall of the rock above it.</p>
+    <p style="color:var(--ink-dim);margin-bottom:20px;">Eighty percent of the structure sits below the original grade, carved from reinforced concrete and waterproofed against the spring melt. The exposed face — glass from floor to ceiling — faces due south, pulling in low winter light while a two-metre stone overhang keeps the interior shaded through summer.</p>
+    <p style="color:var(--ink-dim);">Black oxidised steel window frames match the exposed basalt found on site, quarried during excavation and reused as cladding for the entry wall. Nothing arrived from further than four hundred kilometres away.</p>
+  </div>
+</section>
+
+<section class="project-gallery">
+  <img class="g1" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Living room">
+  <img class="g2" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop" alt="Bedroom suite">
+  <img class="g3" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop" alt="Night exterior">
+</section>
+
+<section class="testimonial">
+  <div class="testimonial-inner reveal-scale">
+    <svg class="quote-mark" width="48" height="36" viewBox="0 0 48 36" fill="none"><path d="M20 0C9 3 0 12 0 24C0 30.6 5.4 36 12 36C18.6 36 24 30.6 24 24C24 18 19.5 13.5 13.7 13C15 7 19 3 24 1.5L20 0ZM44 0C33 3 24 12 24 24C24 30.6 29.4 36 36 36C42.6 36 48 30.6 48 24C48 18 43.5 13.5 37.7 13C39 7 43 3 48 1.5L44 0Z" fill="currentColor"/></svg>
+    <p>Three winters in, the house still surprises us — the way the entry hall
+    goes gold for eleven minutes every solstice morning. That wasn't in the
+    brief. That was OBSIDIAN paying attention we didn't know to ask for.</p>
+    <div class="testimonial-author">
+      <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop" alt="">
+      <div><div class="author-name">Markus & Léa R.</div><div class="author-role">Owners, Villa Obsidian</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="article-nav reveal-up">
+  <a href="residences.html"><span class="dir">← All projects</span>Back to the full portfolio</a>
+  <a href="residence-pavilion.html" class="next"><span class="dir">Next project →</span>Glass Pavilion, Kyoto</a>
+</div>
+
+<section>
+  <div class="cta-banner reveal-up">
+    <div class="cta-banner-bg"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1800&auto=format&fit=crop" alt=""></div>
+    <div class="cta-banner-content">
+      <h2>Considering a mountain site?</h2>
+      <p>We've built on rock, snow and slope for over a decade. Let's talk through what your site allows.</p>
+      <div class="btn-row"><a href="contact.html" class="btn btn-glass magnetic"><span>Start a conversation</span></a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">OBSIDIAN</div>
+    <p>© 2026 OBSIDIAN Architectural Atelier. All projects and content are for demonstration purposes.</p>
+    <div class="footer-links"><a href="index.html#hero">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — OBSIDIAN</title>
+<meta name="description" content="Start a conversation with OBSIDIAN Architectural Atelier. Studios in Geneva, London and Dubai.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="preloader-logo">OBSIDIAN</div>
+  <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="noise-overlay"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>OBSIDIAN</a>
+    <nav class="nav-links">
+      <a href="about.html"><span>01</span> Philosophy</a>
+      <a href="residences.html"><span>02</span> Residences</a>
+      <a href="services.html"><span>03</span> Services</a>
+      <a href="journal.html"><span>04</span> Journal</a>
+      <a href="contact.html" aria-current="page"><span>05</span> Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-tilt-ignore>
+      <svg class="icon-sun" width="17" height="17" viewBox="0 0 17 17" fill="none"><circle cx="8.5" cy="8.5" r="3.5" stroke="currentColor" stroke-width="1.2"/><path d="M8.5 1V2.5M8.5 14.5V16M16 8.5H14.5M2.5 8.5H1M13.6 3.4L12.5 4.5M4.5 12.5L3.4 13.6M13.6 13.6L12.5 12.5M4.5 4.5L3.4 3.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      <svg class="icon-moon" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M14.5 10.4A6.5 6.5 0 1 1 6.6 2.5a5.2 5.2 0 0 0 7.9 7.9Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+    </button>
+    <a href="contact.html" class="nav-cta magnetic"><span>Enquire</span></a>
+    <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="about.html">Philosophy</a>
+  <a href="residences.html">Residences</a>
+  <a href="services.html">Services</a>
+  <a href="journal.html">Journal</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+  <h1 class="reveal-up">Let's talk about your site.</h1>
+  <p class="section-desc reveal-up">Leave a note below — a studio curator will respond within 48 hours for a private consultation.</p>
+</section>
+
+<section class="contact section-tight" id="contact">
+  <div class="contact-grid">
+    <div class="contact-left reveal-up">
+      <span class="section-num">Direct</span>
+      <h2>Reach the studio</h2>
+      <p class="section-desc">For press, careers or supplier enquiries, please use the email below rather than the form.</p>
+
+      <div class="contact-info">
+        <div class="info-row"><span>Studio</span><strong>Geneva · London · Dubai</strong></div>
+        <div class="info-row"><span>Email</span><strong>atelier@obsidian-estates.example</strong></div>
+        <div class="info-row"><span>Phone</span><strong>+41 22 000 00 00</strong></div>
+        <div class="info-row"><span>Hours</span><strong>Mon–Fri, 09:00–18:00 CET</strong></div>
+      </div>
+
+      <div class="social-row">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal-up" id="contactForm">
+      <div class="form-row">
+        <div class="form-field">
+          <label>Name</label>
+          <input type="text" placeholder="Your name" required>
+        </div>
+        <div class="form-field">
+          <label>Email</label>
+          <input type="email" placeholder="you@email.com" required>
+        </div>
+      </div>
+      <div class="form-field">
+        <label>Project type</label>
+        <select>
+          <option>Private residence</option>
+          <option>Penthouse</option>
+          <option>Commercial / pavilion</option>
+          <option>Interiors only</option>
+          <option>Restoration</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Message</label>
+        <textarea rows="4" placeholder="Tell us about your site and vision..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-glass full magnetic">
+        <span>Send enquiry</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="form-note" id="formNote"></div>
+    </form>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="section-head reveal-up">
+    <span class="section-num">Locations</span>
+    <h2>Three studios, one team</h2>
+  </div>
+  <div class="offices-grid">
+    <div class="office-card reveal-up">
+      <h3>Geneva</h3>
+      <p>Rue du Rhône 42<br>1204 Genève, Switzerland<br><br>Headquarters & material archive.</p>
+    </div>
+    <div class="office-card reveal-up">
+      <h3>London</h3>
+      <p>14 Eaton Terrace<br>Belgravia, London SW1<br><br>Engineering & climate systems team.</p>
+    </div>
+    <div class="office-card reveal-up">
+      <h3>Dubai</h3>
+      <p>Gate Village 7, DIFC<br>Dubai, UAE<br><br>Client relations for the Gulf & Asia.</p>
+    </div>
+  </div>
+
+  <div class="map-strip reveal-up">
+    <div class="map-pin"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">OBSIDIAN</div>
+    <p>© 2026 OBSIDIAN Architectural Atelier. All projects and content are for demonstration purposes.</p>
+    <div class="footer-links"><a href="index.html#hero">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

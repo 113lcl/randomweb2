@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glass Pavilion — OBSIDIAN</title>
+<meta name="description" content="Glass Pavilion: a 290 m² private art gallery in Kyoto, built from glass, timber and raw steel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="preloader-logo">OBSIDIAN</div>
+  <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="noise-overlay"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>OBSIDIAN</a>
+    <nav class="nav-links">
+      <a href="about.html"><span>01</span> Philosophy</a>
+      <a href="residences.html" aria-current="page"><span>02</span> Residences</a>
+      <a href="services.html"><span>03</span> Services</a>
+      <a href="journal.html"><span>04</span> Journal</a>
+      <a href="contact.html"><span>05</span> Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-tilt-ignore>
+      <svg class="icon-sun" width="17" height="17" viewBox="0 0 17 17" fill="none"><circle cx="8.5" cy="8.5" r="3.5" stroke="currentColor" stroke-width="1.2"/><path d="M8.5 1V2.5M8.5 14.5V16M16 8.5H14.5M2.5 8.5H1M13.6 3.4L12.5 4.5M4.5 12.5L3.4 13.6M13.6 13.6L12.5 12.5M4.5 4.5L3.4 3.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      <svg class="icon-moon" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M14.5 10.4A6.5 6.5 0 1 1 6.6 2.5a5.2 5.2 0 0 0 7.9 7.9Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+    </button>
+    <a href="contact.html" class="nav-cta magnetic"><span>Enquire</span></a>
+    <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="about.html">Philosophy</a>
+  <a href="residences.html">Residences</a>
+  <a href="services.html">Services</a>
+  <a href="journal.html">Journal</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="project-hero">
+  <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2400&auto=format&fit=crop" alt="Glass Pavilion exterior">
+  <div class="project-hero-content">
+    <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><a href="residences.html">Residences</a><span>/</span><span>Glass Pavilion</span></div>
+    <h1>Glass Pavilion</h1>
+    <p>A private gallery of glass and timber, built to hold light rather than keep it out.</p>
+  </div>
+</section>
+
+<div class="specs-bar">
+  <div class="spec"><div class="spec-label">Location</div><div class="spec-value">Kyoto</div></div>
+  <div class="spec"><div class="spec-label">Completed</div><div class="spec-value">2024</div></div>
+  <div class="spec"><div class="spec-label">Area</div><div class="spec-value">290 m²</div></div>
+  <div class="spec"><div class="spec-label">Materials</div><div class="spec-value">Glass, cedar, steel</div></div>
+  <div class="spec"><div class="spec-label">Duration</div><div class="spec-value">18 months</div></div>
+</div>
+
+<section class="project-story">
+  <div class="reveal-up">
+    <div class="section-num">The brief</div>
+    <h2 style="font-family:var(--serif);font-weight:400;font-size:2rem;margin-top:14px;line-height:1.2;">A gallery that changes with the weather</h2>
+  </div>
+  <div class="reveal-up">
+    <p class="lead" style="margin-bottom:24px;">Commissioned to house a private collection of contemporary sculpture, the brief asked for a building that would never compete with the art — yet never feel neutral either. The answer was a single-storey glass volume wrapped in a cedar screen that filters and diffuses daylight across the day.</p>
+    <p style="color:var(--ink-dim);margin-bottom:20px;">The screen's 4,200 individually angled slats were fabricated at our Carrara workshop and shipped in eleven sealed crates. Each panel rotates two degrees from its neighbour, tracing the sun's path so that no single sculpture receives direct light for more than forty minutes a day.</p>
+    <p style="color:var(--ink-dim);">Beneath the floor, a shallow reflecting pool doubles as passive cooling — drawing heat from the glass roof during Kyoto's humid summers without a single visible vent.</p>
+  </div>
+</section>
+
+<section class="project-gallery">
+  <img class="g1" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop" alt="Gallery interior">
+  <img class="g2" src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?q=80&w=1200&auto=format&fit=crop" alt="Cedar screen detail">
+  <img class="g3" src="https://images.unsplash.com/photo-1600566752734-2a0cd53d0c8c?q=80&w=1800&auto=format&fit=crop" alt="Pavilion at dusk">
+</section>
+
+<section class="testimonial">
+  <div class="testimonial-inner reveal-scale">
+    <svg class="quote-mark" width="48" height="36" viewBox="0 0 48 36" fill="none"><path d="M20 0C9 3 0 12 0 24C0 30.6 5.4 36 12 36C18.6 36 24 30.6 24 24C24 18 19.5 13.5 13.7 13C15 7 19 3 24 1.5L20 0ZM44 0C33 3 24 12 24 24C24 30.6 29.4 36 36 36C42.6 36 48 30.6 48 24C48 18 43.5 13.5 37.7 13C39 7 43 3 48 1.5L44 0Z" fill="currentColor"/></svg>
+    <p>Collectors who visit ask more questions about the building than the
+    work inside it. I've stopped minding. The pavilion taught me to look
+    at light the way I look at a painting.</p>
+    <div class="testimonial-author">
+      <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=200&auto=format&fit=crop" alt="">
+      <div><div class="author-name">Sato K.</div><div class="author-role">Collector, Glass Pavilion</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="article-nav reveal-up">
+  <a href="residence-obsidian.html"><span class="dir">← Previous project</span>Villa Obsidian, Swiss Alps</a>
+  <a href="residences.html" class="next"><span class="dir">All projects →</span>Back to the full portfolio</a>
+</div>
+
+<section>
+  <div class="cta-banner reveal-up">
+    <div class="cta-banner-bg"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt=""></div>
+    <div class="cta-banner-content">
+      <h2>Planning a gallery or pavilion?</h2>
+      <p>Small, precise buildings are some of our favourite work. Let's talk about your collection and your site.</p>
+      <div class="btn-row"><a href="contact.html" class="btn btn-glass magnetic"><span>Start a conversation</span></a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">OBSIDIAN</div>
+    <p>© 2026 OBSIDIAN Architectural Atelier. All projects and content are for demonstration purposes.</p>
+    <div class="footer-links"><a href="index.html#hero">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

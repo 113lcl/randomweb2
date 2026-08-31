@@ -23,7 +23,8 @@
       preloaderFill.style.width = '100%';
       setTimeout(() => {
         preloader.classList.add('done');
-        document.getElementById('hero').classList.add('in-view');
+        const heroEl = document.getElementById('hero');
+        if (heroEl) heroEl.classList.add('in-view');
       }, 250);
     }, 350);
   });
@@ -241,6 +242,51 @@
   document.addEventListener('scroll', () => {
     topBtn.classList.toggle('visible', window.scrollY > 700);
   }, { passive: true });
+
+  /* ---------- Filter tabs (residences page) ---------- */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  if (filterBtns.length) {
+    const filterCards = document.querySelectorAll('[data-category]');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        filterCards.forEach(card => {
+          const show = filter === 'all' || card.dataset.category === filter;
+          card.hidden = !show;
+        });
+      });
+    });
+  }
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      item.parentElement.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  /* ---------- Lightbox for project galleries ---------- */
+  const galleryImgs = document.querySelectorAll('.project-gallery img, .article-body img');
+  if (galleryImgs.length) {
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = '<button class="lightbox-close" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button><img alt="">';
+    document.body.appendChild(lightbox);
+    const lightboxImg = lightbox.querySelector('img');
+    galleryImgs.forEach(img => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add('open');
+      });
+    });
+    lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
+  }
 
   /* ---------- Easter egg: Konami code reveals a hidden note ---------- */
   const konami = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];

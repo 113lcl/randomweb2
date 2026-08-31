@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal — OBSIDIAN</title>
+<meta name="description" content="Notes on light, material, privacy and craft from the OBSIDIAN Architectural Atelier.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="preloader-logo">OBSIDIAN</div>
+  <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="noise-overlay"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>OBSIDIAN</a>
+    <nav class="nav-links">
+      <a href="about.html"><span>01</span> Philosophy</a>
+      <a href="residences.html"><span>02</span> Residences</a>
+      <a href="services.html"><span>03</span> Services</a>
+      <a href="journal.html" aria-current="page"><span>04</span> Journal</a>
+      <a href="contact.html"><span>05</span> Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-tilt-ignore>
+      <svg class="icon-sun" width="17" height="17" viewBox="0 0 17 17" fill="none"><circle cx="8.5" cy="8.5" r="3.5" stroke="currentColor" stroke-width="1.2"/><path d="M8.5 1V2.5M8.5 14.5V16M16 8.5H14.5M2.5 8.5H1M13.6 3.4L12.5 4.5M4.5 12.5L3.4 13.6M13.6 13.6L12.5 12.5M4.5 4.5L3.4 3.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      <svg class="icon-moon" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M14.5 10.4A6.5 6.5 0 1 1 6.6 2.5a5.2 5.2 0 0 0 7.9 7.9Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+    </button>
+    <a href="contact.html" class="nav-cta magnetic"><span>Enquire</span></a>
+    <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="about.html">Philosophy</a>
+  <a href="residences.html">Residences</a>
+  <a href="services.html">Services</a>
+  <a href="journal.html">Journal</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span>Journal</span></div>
+  <h1 class="reveal-up">Notes from the studio.</h1>
+  <p class="section-desc reveal-up">Essays on light, material, privacy and the slow work of building well — written by the people doing it.</p>
+</section>
+
+<section class="section-tight">
+  <div class="journal-grid">
+
+    <a href="journal-light.html" class="journal-card featured reveal-up">
+      <div class="journal-thumb"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt=""></div>
+      <div class="journal-meta"><span>Essay</span><span>·</span><span>12 min read</span></div>
+      <h3>Designing for the eleven minutes of gold light nobody asked for</h3>
+      <p>Why the best moments in a house are rarely the ones written into the brief — and how we design for them anyway.</p>
+    </a>
+
+    <a href="journal-materials.html" class="journal-card reveal-up">
+      <div class="journal-thumb"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+      <div class="journal-meta"><span>Craft</span><span>·</span><span>8 min read</span></div>
+      <h3>What we learned from a decade of cutting our own stone</h3>
+      <p>Notes from the Carrara workshop, and why we never send a drawing anywhere we haven't stood.</p>
+    </a>
+
+    <a href="journal-privacy.html" class="journal-card reveal-up">
+      <div class="journal-thumb"><img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+      <div class="journal-meta"><span>Practice</span><span>·</span><span>6 min read</span></div>
+      <h3>Building privacy into a house before anyone asks for it</h3>
+      <p>Sightlines, approach roads and the quiet architecture of being left alone.</p>
+    </a>
+
+    <div class="journal-card reveal-up" style="opacity:.55;pointer-events:none;">
+      <div class="journal-thumb"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+      <div class="journal-meta"><span>Interview</span><span>·</span><span>Coming soon</span></div>
+      <h3>A conversation with our engineering partner, Julian Ferro</h3>
+      <p>On making climate systems disappear into a wall.</p>
+    </div>
+
+    <div class="journal-card reveal-up" style="opacity:.55;pointer-events:none;">
+      <div class="journal-thumb"><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+      <div class="journal-meta"><span>Essay</span><span>·</span><span>Coming soon</span></div>
+      <h3>The case for building slower than the schedule allows</h3>
+      <p>A defence of the thirty-four-month timeline.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="cta-banner reveal-up">
+    <div class="cta-banner-bg"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1800&auto=format&fit=crop" alt=""></div>
+    <div class="cta-banner-content">
+      <h2>Prefer to talk it through?</h2>
+      <p>Some questions are easier over a call than a comment section we don't have.</p>
+      <div class="btn-row"><a href="contact.html" class="btn btn-glass magnetic"><span>Get in touch</span></a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">OBSIDIAN</div>
+    <p>© 2026 OBSIDIAN Architectural Atelier. All projects and content are for demonstration purposes.</p>
+    <div class="footer-links"><a href="index.html#hero">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

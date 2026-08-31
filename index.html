@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OBSIDIAN — Архитектура тишины</title>
+<title>OBSIDIAN — Architecture of Silence</title>
+<meta name="description" content="OBSIDIAN is a private architectural atelier designing quiet, material-first residences across the world.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -25,32 +26,34 @@
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
       <span class="logo-mark"></span>
       OBSIDIAN
     </a>
     <nav class="nav-links">
-      <a href="#philosophy"><span>01</span> Философия</a>
-      <a href="#residences"><span>02</span> Резиденции</a>
-      <a href="#features"><span>03</span> Особенности</a>
-      <a href="#contact"><span>04</span> Контакты</a>
+      <a href="about.html"><span>01</span> Philosophy</a>
+      <a href="residences.html"><span>02</span> Residences</a>
+      <a href="services.html"><span>03</span> Services</a>
+      <a href="journal.html"><span>04</span> Journal</a>
+      <a href="contact.html"><span>05</span> Contact</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему" data-tilt-ignore>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-tilt-ignore>
       <svg class="icon-sun" width="17" height="17" viewBox="0 0 17 17" fill="none"><circle cx="8.5" cy="8.5" r="3.5" stroke="currentColor" stroke-width="1.2"/><path d="M8.5 1V2.5M8.5 14.5V16M16 8.5H14.5M2.5 8.5H1M13.6 3.4L12.5 4.5M4.5 12.5L3.4 13.6M13.6 13.6L12.5 12.5M4.5 4.5L3.4 3.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
       <svg class="icon-moon" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M14.5 10.4A6.5 6.5 0 1 1 6.6 2.5a5.2 5.2 0 0 0 7.9 7.9Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
     </button>
-    <a href="#contact" class="nav-cta magnetic">
-      <span>Записаться</span>
+    <a href="contact.html" class="nav-cta magnetic">
+      <span>Enquire</span>
     </a>
     <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#philosophy">Философия</a>
-  <a href="#residences">Резиденции</a>
-  <a href="#features">Особенности</a>
-  <a href="#contact">Контакты</a>
+  <a href="about.html">Philosophy</a>
+  <a href="residences.html">Residences</a>
+  <a href="services.html">Services</a>
+  <a href="journal.html">Journal</a>
+  <a href="contact.html">Contact</a>
 </div>
 
 <!-- HERO -->
@@ -64,43 +67,43 @@
   <div class="hero-content">
     <div class="hero-eyebrow reveal-up">
       <span class="line"></span>
-      Приватная архитектурная студия · Est. 2011
+      Private architectural atelier · Est. 2011
     </div>
     <h1 class="hero-title">
-      <span class="reveal-line"><span>Пространство,</span></span>
-      <span class="reveal-line"><span>где тишина</span></span>
-      <span class="reveal-line"><span class="italic">становится формой</span></span>
+      <span class="reveal-line"><span>A space where</span></span>
+      <span class="reveal-line"><span>silence becomes</span></span>
+      <span class="reveal-line"><span class="italic">a form</span></span>
     </h1>
     <p class="hero-sub reveal-up">
-      Мы проектируем резиденции для тех, кто ценит свет, материал и время —
-      без компромиссов и без лишних слов.
+      We design residences for people who value light, material and time —
+      without compromise, without excess.
     </p>
     <div class="hero-actions reveal-up">
-      <a href="#residences" class="btn btn-glass magnetic">
-        <span>Смотреть резиденции</span>
+      <a href="residences.html" class="btn btn-glass magnetic">
+        <span>View residences</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-      <a href="#philosophy" class="btn btn-ghost magnetic">Наш подход</a>
+      <a href="about.html" class="btn btn-ghost magnetic">Our approach</a>
     </div>
   </div>
 
   <div class="hero-scroll">
-    <span>Прокрутите</span>
+    <span>Scroll</span>
     <div class="scroll-line"><div class="scroll-dot"></div></div>
   </div>
 
   <div class="hero-stats">
     <div class="stat">
       <div class="stat-num" data-count="47">0</div>
-      <div class="stat-label">Реализованных объекта</div>
+      <div class="stat-label">Completed residences</div>
     </div>
     <div class="stat">
       <div class="stat-num" data-count="14">0</div>
-      <div class="stat-label">Стран присутствия</div>
+      <div class="stat-label">Countries of practice</div>
     </div>
     <div class="stat">
       <div class="stat-num" data-count="98" data-suffix="%">0</div>
-      <div class="stat-label">Клиентов возвращаются</div>
+      <div class="stat-label">Returning clients</div>
     </div>
   </div>
 </section>
@@ -108,83 +111,85 @@
 <!-- MARQUEE -->
 <div class="marquee">
   <div class="marquee-track">
-    <span>ФОРМА</span><span class="dot"></span>
-    <span>СВЕТ</span><span class="dot"></span>
-    <span>МАТЕРИАЛ</span><span class="dot"></span>
-    <span>ТИШИНА</span><span class="dot"></span>
-    <span>ВРЕМЯ</span><span class="dot"></span>
-    <span>ФОРМА</span><span class="dot"></span>
-    <span>СВЕТ</span><span class="dot"></span>
-    <span>МАТЕРИАЛ</span><span class="dot"></span>
-    <span>ТИШИНА</span><span class="dot"></span>
-    <span>ВРЕМЯ</span><span class="dot"></span>
+    <span>FORM</span><span class="dot"></span>
+    <span>LIGHT</span><span class="dot"></span>
+    <span>MATERIAL</span><span class="dot"></span>
+    <span>SILENCE</span><span class="dot"></span>
+    <span>TIME</span><span class="dot"></span>
+    <span>FORM</span><span class="dot"></span>
+    <span>LIGHT</span><span class="dot"></span>
+    <span>MATERIAL</span><span class="dot"></span>
+    <span>SILENCE</span><span class="dot"></span>
+    <span>TIME</span><span class="dot"></span>
   </div>
 </div>
 
-<!-- PHILOSOPHY -->
+<!-- PHILOSOPHY TEASER -->
 <section class="philosophy" id="philosophy">
   <div class="section-head reveal-up">
-    <span class="section-num">01 / Философия</span>
-    <h2>Архитектура — это то,<br>что остаётся, когда всё лишнее убрано</h2>
+    <span class="section-num">01 / Philosophy</span>
+    <h2>Architecture is what remains<br>once everything unnecessary is removed</h2>
   </div>
 
   <div class="philosophy-grid">
     <div class="philosophy-image reveal-scale">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Интерьер резиденции">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Residence interior">
       <div class="glass-tag">
         <span class="tag-num">01</span>
         <div>
           <div class="tag-title">Villa Meridian</div>
-          <div class="tag-sub">Лазурный берег, 2023</div>
+          <div class="tag-sub">French Riviera, 2023</div>
         </div>
       </div>
     </div>
 
     <div class="philosophy-text">
       <p class="lead reveal-up">
-        Каждый проект начинается с вопроса: что действительно нужно человеку
-        в этом пространстве? Мы убираем всё, что мешает свету, воздуху
-        и тишине — и оставляем только суть.
+        Every project begins with one question: what does a person truly need
+        in this space? We remove everything that stands in the way of light,
+        air and quiet — and keep only what matters.
       </p>
 
       <div class="philosophy-points">
         <div class="point reveal-up">
           <div class="point-num">01</div>
           <div class="point-body">
-            <h3>Минимум формы, максимум смысла</h3>
-            <p>Каждая линия обоснована светом, климатом и движением человека внутри пространства.</p>
+            <h3>Minimal form, maximum meaning</h3>
+            <p>Every line is justified by light, climate and the way a person moves through the space.</p>
           </div>
         </div>
         <div class="point reveal-up">
           <div class="point-num">02</div>
           <div class="point-body">
-            <h3>Материалы говорят сами за себя</h3>
-            <p>Камень, стекло и дерево — без покраски, без имитации. Только подлинная текстура времени.</p>
+            <h3>Materials speak for themselves</h3>
+            <p>Stone, glass and timber — unpainted, unimitated. Only the honest texture of time.</p>
           </div>
         </div>
         <div class="point reveal-up">
           <div class="point-num">03</div>
           <div class="point-body">
-            <h3>Инженерия невидима</h3>
-            <p>Умные системы климата, света и безопасности растворяются в архитектуре, не нарушая её.</p>
+            <h3>Engineering stays invisible</h3>
+            <p>Climate, light and security systems dissolve into the architecture rather than interrupt it.</p>
           </div>
         </div>
       </div>
 
       <blockquote class="quote reveal-up">
-        «Лучшая деталь — та, которую не замечаешь, но чувствуешь каждый день»
-        <cite>— Николас Веран, основатель студии</cite>
+        “The best detail is the one you never notice, but feel every single day.”
+        <cite>— Nicolas Verane, Founder</cite>
       </blockquote>
+
+      <a href="about.html" class="btn btn-outline magnetic reveal-up">Read our full philosophy</a>
     </div>
   </div>
 </section>
 
-<!-- RESIDENCES -->
+<!-- RESIDENCES TEASER -->
 <section class="residences" id="residences">
   <div class="section-head reveal-up">
-    <span class="section-num">02 / Резиденции</span>
-    <h2>Избранные проекты</h2>
-    <p class="section-desc">Каждая резиденция создаётся индивидуально — под ландшафт, климат и характер владельца.</p>
+    <span class="section-num">02 / Residences</span>
+    <h2>Selected work</h2>
+    <p class="section-desc">Every residence is designed individually — shaped by landscape, climate and the character of its owner.</p>
   </div>
 
   <div class="residence-grid">
@@ -194,18 +199,19 @@
       </div>
       <div class="card-glass">
         <div class="card-top">
-          <span class="card-tag">Резиденция</span>
+          <span class="card-tag">Residence</span>
           <span class="card-year">2024</span>
         </div>
         <div class="card-bottom">
           <h3>Villa Obsidian</h3>
-          <p>Швейцарские Альпы · 620 м²</p>
+          <p>Swiss Alps · 620 m²</p>
           <div class="card-footer">
-            <span>Бетон, стекло, чёрная сталь</span>
+            <span>Concrete, glass, black steel</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
           </div>
         </div>
       </div>
+      <a href="residence-obsidian.html" class="card-link" aria-label="View Villa Obsidian"></a>
     </article>
 
     <article class="residence-card reveal-up" data-tilt>
@@ -214,14 +220,15 @@
       </div>
       <div class="card-glass">
         <div class="card-top">
-          <span class="card-tag">Пентхаус</span>
+          <span class="card-tag">Penthouse</span>
           <span class="card-year">2023</span>
         </div>
         <div class="card-bottom">
           <h3>Casa Litoral</h3>
-          <p>Лиссабон · 340 м²</p>
+          <p>Lisbon · 340 m²</p>
         </div>
       </div>
+      <a href="residences.html" class="card-link" aria-label="View Casa Litoral"></a>
     </article>
 
     <article class="residence-card reveal-up" data-tilt>
@@ -230,14 +237,15 @@
       </div>
       <div class="card-glass">
         <div class="card-top">
-          <span class="card-tag">Резиденция</span>
+          <span class="card-tag">Residence</span>
           <span class="card-year">2022</span>
         </div>
         <div class="card-bottom">
           <h3>The Monolith</h3>
-          <p>Аспен · 810 м²</p>
+          <p>Aspen · 810 m²</p>
         </div>
       </div>
+      <a href="residences.html" class="card-link" aria-label="View The Monolith"></a>
     </article>
 
     <article class="residence-card wide reveal-up" data-tilt>
@@ -246,38 +254,39 @@
       </div>
       <div class="card-glass">
         <div class="card-top">
-          <span class="card-tag">Павильон</span>
+          <span class="card-tag">Pavilion</span>
           <span class="card-year">2024</span>
         </div>
         <div class="card-bottom">
           <h3>Glass Pavilion</h3>
-          <p>Киото · 290 м² · Частная галерея искусства</p>
+          <p>Kyoto · 290 m² · Private art gallery</p>
         </div>
       </div>
+      <a href="residence-pavilion.html" class="card-link" aria-label="View Glass Pavilion"></a>
     </article>
   </div>
 
   <div class="residences-cta reveal-up">
-    <a href="#contact" class="btn btn-outline magnetic">Все проекты студии</a>
+    <a href="residences.html" class="btn btn-outline magnetic">All studio projects</a>
   </div>
 </section>
 
 <!-- COMPARE -->
 <section class="compare-section">
   <div class="section-head reveal-up">
-    <span class="section-num">Технология / Визуализация</span>
-    <h2>Один дом — день и ночь</h2>
-    <p class="section-desc">Потяните за разделитель, чтобы увидеть, как меняется резиденция в разное время суток.</p>
+    <span class="section-num">Technology / Visualization</span>
+    <h2>One house — day and night</h2>
+    <p class="section-desc">Drag the divider to see how a residence transforms across the hours of the day.</p>
   </div>
 
   <div class="compare" id="compare">
     <div class="compare-img compare-day">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Резиденция днём" draggable="false">
-      <span class="compare-label left">День</span>
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Residence by day" draggable="false">
+      <span class="compare-label left">Day</span>
     </div>
     <div class="compare-img compare-night" id="compareNight">
-      <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop" alt="Резиденция ночью" draggable="false">
-      <span class="compare-label right">Ночь</span>
+      <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop" alt="Residence by night" draggable="false">
+      <span class="compare-label right">Night</span>
     </div>
     <div class="compare-handle" id="compareHandle">
       <div class="compare-handle-circle">
@@ -291,8 +300,8 @@
 <section class="features" id="features">
   <div class="features-bg"></div>
   <div class="section-head reveal-up light">
-    <span class="section-num">03 / Особенности</span>
-    <h2>Что входит в каждый проект</h2>
+    <span class="section-num">03 / Capabilities</span>
+    <h2>What's included in every project</h2>
   </div>
 
   <div class="features-grid">
@@ -300,43 +309,43 @@
       <div class="feature-icon">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.2"/><path d="M14 8V14L18 17" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
       </div>
-      <h3>Полный цикл</h3>
-      <p>От концепции и разрешений до финального декора — единая команда ведёт проект от идеи до ключей.</p>
+      <h3>Full-cycle delivery</h3>
+      <p>From concept and permitting to final decor — one team carries the project from idea to keys.</p>
     </div>
     <div class="feature-card reveal-up" data-tilt-soft>
       <div class="feature-icon">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4L23 9V19L14 24L5 19V9L14 4Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
       </div>
-      <h3>Индивидуальный материал</h3>
-      <p>Собственные мастерские по камню и дереву в Италии позволяют создавать элементы, которых нет ни у кого.</p>
+      <h3>Bespoke material studio</h3>
+      <p>Our own stone and timber workshops in Italy allow us to create pieces that exist nowhere else.</p>
     </div>
     <div class="feature-card reveal-up" data-tilt-soft>
       <div class="feature-icon">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 14C5 8.5 9.5 4 15 4C19 4 22 6.5 23 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M23 14C23 19.5 18.5 24 13 24C9 24 6 21.5 5 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
       </div>
-      <h3>Инженерия климата и света</h3>
-      <p>Адаптивные системы, реагирующие на сезон, время суток и присутствие человека в комнате.</p>
+      <h3>Climate & light engineering</h3>
+      <p>Adaptive systems that respond to season, time of day and human presence within a room.</p>
     </div>
     <div class="feature-card reveal-up" data-tilt-soft>
       <div class="feature-icon">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="5" y="5" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M5 11H23" stroke="currentColor" stroke-width="1.2"/></svg>
       </div>
-      <h3>Приватность и безопасность</h3>
-      <p>Проектирование с учётом полной конфиденциальности владельца — от участка до цифровых систем дома.</p>
+      <h3>Privacy & security</h3>
+      <p>Designed around complete owner confidentiality — from the plot boundary to the home's digital systems.</p>
     </div>
     <div class="feature-card reveal-up" data-tilt-soft>
       <div class="feature-icon">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 24C14 24 5 18.5 5 11.5C5 7.9 7.9 5 11.5 5C13 5 14 6 14 6C14 6 15 5 16.5 5C20.1 5 23 7.9 23 11.5C23 18.5 14 24 14 24Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
       </div>
-      <h3>Сопровождение после сдачи</h3>
-      <p>Персональный куратор дома остаётся на связи для сезонного обслуживания и адаптации пространства.</p>
+      <h3>Aftercare, always</h3>
+      <p>A personal home curator stays in touch for seasonal maintenance and evolving needs.</p>
     </div>
     <div class="feature-card reveal-up" data-tilt-soft>
       <div class="feature-icon">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 20L11 8L16 15L20 10L24 20" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
-      <h3>Интеграция с ландшафтом</h3>
-      <p>Дом проектируется как продолжение рельефа — а не объект, поставленный поверх него.</p>
+      <h3>Landscape integration</h3>
+      <p>Each home is designed as a continuation of the terrain — never an object placed on top of it.</p>
     </div>
   </div>
 </section>
@@ -345,91 +354,40 @@
 <section class="testimonial">
   <div class="testimonial-inner reveal-scale">
     <svg class="quote-mark" width="48" height="36" viewBox="0 0 48 36" fill="none"><path d="M20 0C9 3 0 12 0 24C0 30.6 5.4 36 12 36C18.6 36 24 30.6 24 24C24 18 19.5 13.5 13.7 13C15 7 19 3 24 1.5L20 0ZM44 0C33 3 24 12 24 24C24 30.6 29.4 36 36 36C42.6 36 48 30.6 48 24C48 18 43.5 13.5 37.7 13C39 7 43 3 48 1.5L44 0Z" fill="currentColor"/></svg>
-    <p>Мы работали с четырьмя студиями до OBSIDIAN. Только здесь нам не пришлось объяснять,
-    что тишина — тоже часть дизайна. Дом получился таким, каким мы его чувствовали,
-    но не могли описать словами.</p>
+    <p>We worked with four studios before OBSIDIAN. Only here did we never have
+    to explain that silence is part of the design too. The house turned out
+    exactly as we felt it, long before we could put it into words.</p>
     <div class="testimonial-author">
       <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" alt="">
       <div>
-        <div class="author-name">Элена Ф.</div>
-        <div class="author-role">Владелица Villa Meridian</div>
+        <div class="author-name">Elena F.</div>
+        <div class="author-role">Owner, Villa Meridian</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="contact-grid">
-    <div class="contact-left reveal-up">
-      <span class="section-num">04 / Контакты</span>
-      <h2>Обсудим ваш проект</h2>
-      <p class="section-desc">
-        Оставьте заявку — куратор студии свяжется с вами в течение 48 часов
-        для приватной консультации.
-      </p>
-
-      <div class="contact-info">
-        <div class="info-row">
-          <span>Студия</span>
-          <strong>Женева · Лондон · Дубай</strong>
-        </div>
-        <div class="info-row">
-          <span>Почта</span>
-          <strong>atelier@obsidian-estates.example</strong>
-        </div>
-        <div class="info-row">
-          <span>Телефон</span>
-          <strong>+41 22 000 00 00</strong>
-        </div>
-      </div>
-
-      <div class="social-row">
-        <a href="#">Instagram</a>
-        <a href="#">Pinterest</a>
-        <a href="#">LinkedIn</a>
+<!-- CTA BANNER -->
+<section>
+  <div class="cta-banner reveal-up">
+    <div class="cta-banner-bg"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1800&auto=format&fit=crop" alt=""></div>
+    <div class="cta-banner-content">
+      <h2>Let's talk about your project</h2>
+      <p>Tell us about your site and vision — a studio curator will respond within 48 hours for a private consultation.</p>
+      <div class="btn-row">
+        <a href="contact.html" class="btn btn-glass magnetic"><span>Start a project</span></a>
+        <a href="services.html" class="btn btn-ghost magnetic">See our process</a>
       </div>
     </div>
-
-    <form class="contact-form reveal-up" id="contactForm">
-      <div class="form-row">
-        <div class="form-field">
-          <label>Имя</label>
-          <input type="text" placeholder="Ваше имя" required>
-        </div>
-        <div class="form-field">
-          <label>Почта</label>
-          <input type="email" placeholder="you@email.com" required>
-        </div>
-      </div>
-      <div class="form-field">
-        <label>Тип проекта</label>
-        <select>
-          <option>Частная резиденция</option>
-          <option>Пентхаус</option>
-          <option>Коммерческий объект</option>
-          <option>Реставрация</option>
-        </select>
-      </div>
-      <div class="form-field">
-        <label>Сообщение</label>
-        <textarea rows="3" placeholder="Расскажите о вашем участке и видении..."></textarea>
-      </div>
-      <button type="submit" class="btn btn-glass full magnetic">
-        <span>Отправить заявку</span>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <div class="form-note" id="formNote"></div>
-    </form>
   </div>
 </section>
 
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-logo">OBSIDIAN</div>
-    <p>© 2026 OBSIDIAN Architectural Atelier. Все проекты и материалы демонстрационные.</p>
+    <p>© 2026 OBSIDIAN Architectural Atelier. All projects and content are for demonstration purposes.</p>
     <div class="footer-links">
-      <a href="#hero">Наверх ↑</a>
+      <a href="index.html#hero">Back to top ↑</a>
     </div>
   </div>
 </footer>

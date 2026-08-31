@@ -1,29 +1,40 @@
 # OBSIDIAN — Architectural Atelier
 
-Статичный лендинг премиального архитектурного бюро. Контент демонстрационный.
+A multi-page luxury landing site for a fictional private architecture studio. All content is for demonstration purposes.
 
-## Стек
-Чистый HTML/CSS/JS, без сборки и зависимостей — можно открыть напрямую или задеплоить на GitHub Pages.
+## Stack
+Plain HTML/CSS/JS, no build step or dependencies — open directly or deploy to GitHub Pages.
 
-## Фишки
-- Кастомный курсор с "магнитными" кнопками
-- 3D-tilt на карточках при наведении
-- Reveal-анимации при скролле (IntersectionObserver)
-- Анимированные счётчики статистики
-- Бегущая строка (marquee)
-- Интерактивный слайдер сравнения "день/ночь"
-- Переключатель светлой/тёмной темы (сохраняется в localStorage)
-- Параллакс на hero-изображении
-- Прелоадер и прогресс-бар скролла
-- Пасхалка: код Конами меняет палитру на несколько секунд
+## Pages
+- `index.html` — Home
+- `about.html` — Philosophy, values, timeline, team
+- `residences.html` — Portfolio grid with category filters
+- `residence-obsidian.html`, `residence-pavilion.html` — Individual project pages (gallery, specs, lightbox)
+- `services.html` — Process, pricing tiers, FAQ accordion
+- `journal.html` + `journal-light.html`, `journal-materials.html`, `journal-privacy.html` — Editorial journal & articles
+- `contact.html` — Contact form, offices, map
 
-## Локальный запуск
-Просто откройте `index.html` в браузере, либо через любой статический сервер:
+## Interactive features
+- Custom cursor with magnetic buttons
+- 3D tilt on cards
+- Scroll reveal animations (IntersectionObserver)
+- Animated stat counters
+- Marquee ticker
+- Day/night comparison slider (draggable)
+- Light/dark theme toggle (persisted via localStorage)
+- Category filter tabs (residences)
+- FAQ accordion (services)
+- Image lightbox (project galleries & articles)
+- Parallax hero image, preloader, scroll progress bar, scroll-to-top button
+- Easter egg: Konami code
+
+## Local run
+Open `index.html` directly, or serve statically:
 
 ```bash
 npx serve .
 ```
 
-## Деплой на GitHub Pages
-1. Запушьте содержимое папки в репозиторий.
-2. В настройках репозитория включите Pages → Source: `main` / root.
+## Deploy to GitHub Pages
+1. Push the contents of this folder to a repository.
+2. In the repo settings, enable Pages → Source: `main` / root.
