@@ -190,8 +190,8 @@ button, input, textarea, select{ font-family:inherit; color:inherit; }
 
 /* ---------- Hero ---------- */
 .hero{
-  position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:center;
-  overflow:hidden; padding: 140px 5vw 60px;
+  position:relative; min-height:100vh; display:flex; flex-direction:column;
+  overflow:hidden; padding: 140px 5vw 50px;
 }
 .hero-bg{ position:absolute; inset:0; z-index:-2; }
 .hero-bg img{
@@ -216,7 +216,7 @@ button, input, textarea, select{ font-family:inherit; color:inherit; }
   mask-image: radial-gradient(circle at 50% 30%, black, transparent 70%);
 }
 
-.hero-content{ max-width:900px; z-index:2; }
+.hero-content{ max-width:900px; z-index:2; margin: auto 0; }
 .hero-eyebrow{
   display:flex; align-items:center; gap:14px;
   font-size:.78rem; letter-spacing:.15em; text-transform:uppercase; color:var(--ink-dim);
@@ -239,8 +239,12 @@ button, input, textarea, select{ font-family:inherit; color:inherit; }
 }
 .hero-actions{ display:flex; gap:18px; flex-wrap:wrap; }
 
+.hero-bottom-row{
+  position:relative; z-index:2; margin-top:40px;
+  display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:24px;
+}
+
 .hero-scroll{
-  position:absolute; bottom:120px; left:5vw; z-index:2;
   display:flex; align-items:center; gap:14px;
   font-size:.7rem; letter-spacing:.15em; text-transform:uppercase; color:var(--ink-faint);
 }
@@ -249,14 +253,14 @@ button, input, textarea, select{ font-family:inherit; color:inherit; }
 @keyframes scrollMove{ 0%{ top:-30%; } 60%{ top:100%; } 100%{ top:100%; } }
 
 .hero-stats{
-  position:absolute; bottom:44px; right:5vw; z-index:2;
-  display:flex; gap:44px;
+  display:flex; gap:44px; margin-left:auto;
 }
 .stat-num{ font-family:var(--serif); font-size:2.1rem; color:var(--ink); }
 .stat-label{ font-size:.68rem; color:var(--ink-faint); max-width:110px; letter-spacing:.02em; margin-top:4px; }
 
 @media (max-width: 860px){
   .hero-stats{ display:none; }
+  .hero-bottom-row{ justify-content:flex-start; }
 }
 
 /* ---------- Marquee ---------- */
