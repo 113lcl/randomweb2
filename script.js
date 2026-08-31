@@ -70,11 +70,14 @@
   /* ---------- Magnetic buttons ---------- */
   if (!isTouch) {
     document.querySelectorAll('.magnetic').forEach(el => {
+      const maxShift = 16;
       el.addEventListener('mousemove', (e) => {
         const r = el.getBoundingClientRect();
         const relX = e.clientX - r.left - r.width / 2;
         const relY = e.clientY - r.top - r.height / 2;
-        el.style.transform = `translate(${relX * 0.28}px, ${relY * 0.35}px)`;
+        const x = Math.max(-maxShift, Math.min(maxShift, relX * 0.28));
+        const y = Math.max(-maxShift, Math.min(maxShift, relY * 0.35));
+        el.style.transform = `translate(${x}px, ${y}px)`;
       });
       el.addEventListener('mouseleave', () => {
         el.style.transform = 'translate(0,0)';
