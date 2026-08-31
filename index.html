@@ -112,17 +112,14 @@
 
 <!-- MARQUEE -->
 <div class="marquee">
-  <div class="marquee-track">
-    <span>FORM</span><span class="dot"></span>
-    <span>LIGHT</span><span class="dot"></span>
-    <span>MATERIAL</span><span class="dot"></span>
-    <span>SILENCE</span><span class="dot"></span>
-    <span>TIME</span><span class="dot"></span>
-    <span>FORM</span><span class="dot"></span>
-    <span>LIGHT</span><span class="dot"></span>
-    <span>MATERIAL</span><span class="dot"></span>
-    <span>SILENCE</span><span class="dot"></span>
-    <span>TIME</span><span class="dot"></span>
+  <div class="marquee-track" id="marqueeTrack">
+    <div class="marquee-set">
+      <span>FORM</span><span class="dot"></span>
+      <span>LIGHT</span><span class="dot"></span>
+      <span>MATERIAL</span><span class="dot"></span>
+      <span>SILENCE</span><span class="dot"></span>
+      <span>TIME</span><span class="dot"></span>
+    </div>
   </div>
 </div>
 
@@ -276,19 +273,19 @@
 <!-- COMPARE -->
 <section class="compare-section">
   <div class="section-head reveal-up">
-    <span class="section-num">Technology / Visualization</span>
-    <h2>One house — day and night</h2>
-    <p class="section-desc">Drag the divider to see how a residence transforms across the hours of the day.</p>
+    <span class="section-num">Technology / Process</span>
+    <h2>Ground broken — house delivered</h2>
+    <p class="section-desc">Drag the divider to see a residence move from the first structural work to the finished home.</p>
   </div>
 
   <div class="compare" id="compare">
     <div class="compare-img compare-day">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Residence by day" draggable="false">
-      <span class="compare-label left">Day</span>
+      <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=1800&auto=format&fit=crop" alt="Residence under construction" draggable="false">
+      <span class="compare-label left">Before</span>
     </div>
     <div class="compare-img compare-night" id="compareNight">
-      <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1800&auto=format&fit=crop" alt="Residence by night" draggable="false">
-      <span class="compare-label right">Night</span>
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Completed residence" draggable="false">
+      <span class="compare-label right">After</span>
     </div>
     <div class="compare-handle" id="compareHandle">
       <div class="compare-handle-circle">

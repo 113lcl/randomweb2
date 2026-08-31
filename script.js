@@ -7,6 +7,38 @@
   const html = document.documentElement;
   const isTouch = matchMedia('(hover:none), (pointer:coarse)').matches;
 
+  /* ---------- Marquee: fill any viewport width seamlessly ---------- */
+  const marqueeTrack = document.getElementById('marqueeTrack');
+  if (marqueeTrack) {
+    const pristineSetHTML = marqueeTrack.querySelector('.marquee-set').outerHTML;
+    const fillMarquee = () => {
+      const gap = 28;
+      marqueeTrack.innerHTML = pristineSetHTML;
+      const baseSet = marqueeTrack.querySelector('.marquee-set');
+      const setWidth = baseSet.getBoundingClientRect().width + gap;
+      const containerWidth = Math.max(
+        marqueeTrack.parentElement.getBoundingClientRect().width,
+        window.innerWidth || 0
+      );
+      if (setWidth <= 0) return;
+      const setsNeeded = Math.max(1, Math.ceil(containerWidth / setWidth));
+      for (let i = 1; i < setsNeeded; i++) {
+        marqueeTrack.appendChild(baseSet.cloneNode(true));
+      }
+      // duplicate the whole first half once more so the -50% keyframe loops seamlessly
+      Array.from(marqueeTrack.children).forEach(set => {
+        marqueeTrack.appendChild(set.cloneNode(true));
+      });
+    };
+    fillMarquee();
+    window.addEventListener('load', fillMarquee);
+    let marqueeResizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(marqueeResizeTimer);
+      marqueeResizeTimer = setTimeout(fillMarquee, 200);
+    });
+  }
+
   /* ---------- Preloader ---------- */
   const preloader = document.getElementById('preloader');
   const preloaderFill = document.getElementById('preloaderFill');
@@ -178,7 +210,7 @@
   }, { threshold: 0.5 });
   counters.forEach(el => counterIO.observe(el));
 
-  /* ---------- Compare slider (day/night) ---------- */
+  /* ---------- Compare slider (before/after) ---------- */
   const compare = document.getElementById('compare');
   const compareNight = document.getElementById('compareNight');
   const compareHandle = document.getElementById('compareHandle');
