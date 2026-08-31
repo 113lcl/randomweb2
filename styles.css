@@ -516,7 +516,7 @@ section{ position:relative; padding: 140px 5vw; }
 
 /* ---------- Page hero (interior pages) ---------- */
 .page-hero{
-  position:relative; padding: 168px 5vw 90px; overflow:hidden;
+  position:relative; padding: 168px 5vw 120px; overflow:hidden;
   border-bottom:1px solid var(--line);
 }
 .breadcrumbs{
@@ -787,5 +787,5 @@ section{ position:relative; padding: 140px 5vw; }
 @keyframes pinPulse{ 0%,100%{ transform:translate(-50%,-100%) rotate(-45deg) scale(1); } 50%{ transform:translate(-50%,-100%) rotate(-45deg) scale(1.15); } }
 
 /* ---------- Simple page footer content top border spacing fix ---------- */
-.section-tight{ padding-top:0; }
+.section-tight{ padding-top:90px; }
 
