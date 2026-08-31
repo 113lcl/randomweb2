@@ -340,16 +340,16 @@ section{ position:relative; padding: 140px 5vw; }
 
 /* ---------- Residences ---------- */
 .residence-grid{
-  display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto;
+  display:grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 380px;
   gap:22px;
 }
 .residence-card{
-  position:relative; border-radius: var(--radius); overflow:hidden; aspect-ratio: 3/4;
+  position:relative; border-radius: var(--radius); overflow:hidden;
   border:1px solid var(--line);
   transform-style: preserve-3d; will-change: transform;
 }
-.residence-card.large{ grid-row: span 2; aspect-ratio:auto; }
-.residence-card.wide{ grid-column: span 2; aspect-ratio: 16/8; }
+.residence-card.large{ grid-row: span 2; }
+.residence-card.wide{ grid-column: span 2; }
 .card-img{ position:absolute; inset:0; }
 .card-img img{ width:100%; height:100%; object-fit:cover; transition: transform 1.4s var(--ease), filter .6s ease; filter:saturate(.9) brightness(.75); }
 .residence-card:hover .card-img img{ transform:scale(1.08); filter:saturate(1) brightness(.6); }
@@ -374,13 +374,13 @@ section{ position:relative; padding: 140px 5vw; }
 .card-link{ position:absolute; inset:0; z-index:3; }
 
 @media (max-width: 900px){
-  .residence-grid{ grid-template-columns:1fr 1fr; }
-  .residence-card.large{ grid-column:span 2; grid-row:auto; aspect-ratio: 16/10; }
+  .residence-grid{ grid-template-columns:1fr 1fr; grid-auto-rows: 320px; }
+  .residence-card.large{ grid-column:span 2; grid-row:span 1; }
   .residence-card.wide{ grid-column:span 2; }
 }
 @media (max-width: 600px){
-  .residence-grid{ grid-template-columns:1fr; }
-  .residence-card.wide, .residence-card.large{ grid-column:span 1; }
+  .residence-grid{ grid-template-columns:1fr; grid-auto-rows: 340px; }
+  .residence-card.wide, .residence-card.large{ grid-column:span 1; grid-row:span 1; }
 }
 
 .residences-cta{ display:flex; justify-content:center; margin-top:56px; }
