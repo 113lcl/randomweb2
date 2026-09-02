@@ -295,6 +295,54 @@
     });
   }
 
+  /* ---------- Custom select ---------- */
+  document.querySelectorAll('.custom-select').forEach(select => {
+    const trigger = select.querySelector('.custom-select-trigger');
+    const valueEl = select.querySelector('.custom-select-value');
+    const hiddenInput = select.querySelector('input[type="hidden"]');
+    const options = select.querySelectorAll('.custom-select-options li');
+
+    const closeSelect = () => {
+      select.classList.remove('open');
+      trigger.setAttribute('aria-expanded', 'false');
+    };
+    const closeAllOthers = () => {
+      document.querySelectorAll('.custom-select.open').forEach(s => {
+        if (s !== select) { s.classList.remove('open'); s.querySelector('.custom-select-trigger').setAttribute('aria-expanded', 'false'); }
+      });
+    };
+
+    trigger.addEventListener('click', () => {
+      const willOpen = !select.classList.contains('open');
+      closeAllOthers();
+      select.classList.toggle('open', willOpen);
+      trigger.setAttribute('aria-expanded', String(willOpen));
+    });
+
+    options.forEach(option => {
+      option.addEventListener('click', () => {
+        options.forEach(o => { o.classList.remove('selected'); o.setAttribute('aria-selected', 'false'); });
+        option.classList.add('selected');
+        option.setAttribute('aria-selected', 'true');
+        valueEl.textContent = option.textContent;
+        if (hiddenInput) hiddenInput.value = option.textContent;
+        closeSelect();
+      });
+    });
+
+    select.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSelect();
+    });
+  });
+  document.addEventListener('click', (e) => {
+    document.querySelectorAll('.custom-select.open').forEach(select => {
+      if (!select.contains(e.target)) {
+        select.classList.remove('open');
+        select.querySelector('.custom-select-trigger').setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
   /* ---------- FAQ accordion ---------- */
   document.querySelectorAll('.faq-question').forEach(q => {
     q.addEventListener('click', () => {
